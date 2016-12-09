@@ -105,7 +105,7 @@ def PCRF_fixed_addACCT(input_data):
         test = template.replace("?ACCT#?", inlist[2])
         test = test.replace("?IMSI?", inlist[0])
         test = test.replace("?MSISDN?", inlist[1])
-        test = test.replace("?Rule_name?", inlist[4])
+        test = test.replace("?Rule_name?", inlist[4].rstrip())
         print(test)
 
 
